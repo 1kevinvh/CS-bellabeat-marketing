@@ -5,17 +5,7 @@
 - Jupyter Notebook
   - pandas
   - matplotlib
-  - pathlib
-
-## Problems
-- 
-- 
-- 
-- 
-
-## Solutions
-- 
-- 
+  - numpy
 
 ## Scenerio
 This is a fictional scenario where I am working as a Junior Data Analyst for a fictional company, Bellabeat.
@@ -35,16 +25,21 @@ I have been asked to focus on one of Bellabeat's products and analyze smart devi
 ## Introduction
 I have been asked to focus on one of Bellabeat's products and analyze smart device data to gain insights into how consumers are using their smart devices.
 
-- Assumptions
-- Questions to answer
+I am working with the assumption that we have enough data to generalize the data to the population of smart device users.
+
+To guide this project, I have come up with a few questions:
+1. In the two months of data we have available, how active are the users using these smart devices?
+2. What purpose do people use these smart devices?
 
 ## Preparation
-- Describe data
-- Tools used
-- Clean Data
-- Document Data Cleaning process
+To prepare, I downloaded a dataset available through a public domain, made available through [Mobius](https://www.kaggle.com/datasets/arashnic/fitbit/data) to conduct this case study.
 
-To prepare, I downloaded data that has been made available by Motivate International Inc. under this [license](https://www.divvybikes.com/data-license-agreement) to conduct this case study. The data was separated out by quarter, so I downloaded 4 reports. 
+Looking through the reports, it seemed there was really only one csv that had full data -- dailyActivity_merged. The data contains two months from 35 different users of FitBit tracker data that we will use to describe the purpose people use their smart devices.
+
+Using the Python Pandas package, I read in the data and began to clean and prepare.
+To begin, I checked and fixed any columns that did not have correct data types. I also standardized the column names to snake-case for readability. I also added columns to show which day of the week was recorded for a later analysis.
+
+I checked for duplicate rows and null values, which there were none, removed columns I would not use in the analysis, and filtered out impactful outliers to finish off the data preperation process.
 
 ## Analyze
 - Aggregate data
