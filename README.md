@@ -1,4 +1,4 @@
-# What should be Bellabeat's marketing strategy?
+# Who is Bellabeat's target demographic?
 
 ## Used Software
 - Python
@@ -47,21 +47,23 @@ I checked for duplicate rows and null values, which there were none, removed col
 
 Since the comppany offers fitness products, the first thing that comes to mind is to figure out how active are the users of these smart devices? It turns out, according to our sample of data, smart device users are not that active.
 
-![Average Minutes by Activity Level]()
+![Average Minutes by Activity Level](/images/mins_by_activity.png)
 
 This may be the case overall, but I wasn't convinced this would be the case for every day of the week since office workers have more free time on weekends. As it turns out, the pattern stays consistent, so we have evidence that the smart device users aren't very active. 
 
-![Activity Level By Day Of Week]()
+![Activity Level By Day Of Week](/images/activity_by_dow.png)
 
 Since I understood the demographic now, I was looking for any trends connected to minutes active, and was able to find a correllation between total steps taken and minutes active. It seems the more minutes active for eache activity level, the more steps were taken, while the more sedentary minutes, the less steps taken.
 
-![Total Steps By Active Minutes]()
+![Total Steps By Active Minutes](/images/steps_by_mins_active.png)
 
 Similarly, based on the data, we were able to uncover a correlation between minutes active and calories burned. It seems for each activity level, the more active you are, the more calories you burn, and the more sedentary you are, the less calories you burn.
 
-![Calories Burned By Active Minutes]()
+![Calories Burned By Active Minutes](/images/calories_burned_by_mins_active.png)
 
 Finally, based on the data, it seems there is a positive correlation between total steps and calories burned, meaning there is evidence to show more steps you take, the more calories you burn.
+
+![Calories Burned Steps Taken](/images/calories_by_steps.png)
 
 ## Recommendations
 It seems, based on our data, fitness smart device users are not very active. There seems to be a positive relationship between total steps taken and calories burned as well. Based on this, I would suggest one of the following:
