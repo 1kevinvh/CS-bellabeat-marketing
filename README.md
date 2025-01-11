@@ -25,11 +25,9 @@ I have been asked to focus on one of Bellabeat's products and analyze smart devi
 ## Introduction
 I have been asked to focus on one of Bellabeat's products and analyze smart device data to gain insights into how consumers are using their smart devices.
 
-I am working with the assumption that we have enough data to generalize the data to the population of smart device users.
+I am working with the assumption that we have enough data to generalize the data to the population of smart device users, and that it covers a wide range of active individuals.
 
-To guide this project, I have come up with a few questions:
-1. In the two months of data we have available, how active are the users using these smart devices?
-2. What purpose do people use these smart devices?
+In this case study, I focus on analyzing the smart device data from Bellabeat users to uncover insights into consumer activity and behaviors. This analysis aims to inform marketing strategies by understanding user activity levels, potential target demographics, and how Bellabeat’s products align with customer needs.
 
 ## Preparation
 To prepare, I downloaded a dataset available through a public domain, made available through [Mobius](https://www.kaggle.com/datasets/arashnic/fitbit/data) to conduct this case study.
@@ -41,17 +39,34 @@ To begin, I checked and fixed any columns that did not have correct data types. 
 
 I checked for duplicate rows and null values, which there were none, removed columns I would not use in the analysis, and filtered out impactful outliers to finish off the data preperation process.
 
-## Analyze
+## Analyze & Share
 - Aggregate data
 - Organize and format data
 - Perform calculations
 - Identify trends and relationships
 
-## Share
-- Determine the best way to share findings
-- Create effective data Visualizations
-- Present Findings
+Since the comppany offers fitness products, the first thing that comes to mind is to figure out how active are the users of these smart devices? It turns out, according to our sample of data, smart device users are not that active.
+
+![Average Minutes by Activity Level]()
+
+This may be the case overall, but I wasn't convinced this would be the case for every day of the week since office workers have more free time on weekends. As it turns out, the pattern stays consistent, so we have evidence that the smart device users aren't very active. 
+
+![Activity Level By Day Of Week]()
+
+Since I understood the demographic now, I was looking for any trends connected to minutes active, and was able to find a correllation between total steps taken and minutes active. It seems the more minutes active for eache activity level, the more steps were taken, while the more sedentary minutes, the less steps taken.
+
+![Total Steps By Active Minutes]()
+
+Similarly, based on the data, we were able to uncover a correlation between minutes active and calories burned. It seems for each activity level, the more active you are, the more calories you burn, and the more sedentary you are, the less calories you burn.
+
+![Calories Burned By Active Minutes]()
+
+Finally, based on the data, it seems there is a positive correlation between total steps and calories burned, meaning there is evidence to show more steps you take, the more calories you burn.
 
 ## Recommendations
-- Share recommendations
+It seems, based on our data, fitness smart device users are not very active. There seems to be a positive relationship between total steps taken and calories burned as well. Based on this, I would suggest one of the following:
+1. Market to Lightly Active People: The data suggests the majority of users are “lightly active” and thus would benefit from motivation to be more active. This group could be an untapped opportunity for Bellabeat’s products to offer more personalized activity and goal-setting features.
+2. Target Weight-Loss Enthusiasts: Position Bellabeat products as tools for easy weight loss management, focusing on effortless ways to increase daily steps and improve overall wellness.
 
+## Conclusion
+By understanding the activity patterns and correlating behaviors of our customers, Bellabeat has the opportunity to grow its customer base by appealing to lightly active individuals and those looking for a low-effort way to achieve health goals like weight loss. Tailored marketing campaigns and product enhancements could help fill these needs and create new growth opportunities.
