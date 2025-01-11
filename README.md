@@ -1,4 +1,4 @@
-# Who is Bellabeat's target demographic?
+# What should be Bellabeat's marketeting strategy?
 
 ## Used Software
 - Python
